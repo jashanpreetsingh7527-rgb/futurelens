@@ -26,8 +26,7 @@ function renderFooter(settings, pages) {
   const name = (settings.site_title || 'FUTURELENS').toUpperCase();
   $('brand').textContent = name;
 
-  $('footAbout').textContent = settings.about
-    || 'A student club for photography, media and storytelling.';
+  $('footAbout').textContent = 'A student club for photography, media and storytelling.';
 
   $('footContact').innerHTML = [
     settings.address && `<span>${esc(settings.address)}</span>`,

@@ -238,8 +238,7 @@ const SOCIAL_LABEL = { instagram: 'IG', linkedin: 'IN', youtube: 'YT' };
 function renderFooter(settings, pages) {
   const name = (settings.site_title || 'FUTURELENS').toUpperCase();
 
-  $('footAbout').textContent = settings.about
-    || 'A student club for photography, media and storytelling. Open to every student, whatever you shoot with.';
+  $('footAbout').textContent = 'A student club for photography, media and storytelling. Open to every student, whatever you shoot with.';
 
   $('footContact').innerHTML = [
     settings.address && `<span>${esc(settings.address)}</span>`,
