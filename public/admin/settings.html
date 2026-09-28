@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Website settings &middot; FUTURELENS admin</title>
+<link rel="icon" href="/assets/img/favicon.png">
+<link rel="stylesheet" href="/assets/css/admin.css">
+</head>
+<body data-page="settings">
+
+<div class="mobile-bar">
+  <button id="sideToggle" aria-label="Open menu">Menu</button>
+  <b>FUTURELENS</b>
+</div>
+
+<div class="shell">
+  <aside class="side" id="side"></aside>
+  <main class="work">
+    <div class="page-head">
+      <div>
+        <h1 id="pageTitle">Website settings</h1>
+        <p id="pageSub">The club details shown across the public site.</p>
+      </div>
+      
+    </div>
+    <div id="pageNotice"></div>
+    <div class="panel" style="padding:1.4rem;max-width:620px" id="settingsForm"></div>
+  </main>
+</div>
+
+<div class="scrim" id="scrim"></div>
+<section class="drawer" id="drawer" aria-hidden="true">
+  <header><h2 id="drawerTitle">Edit</h2><button class="close" id="drawerClose" aria-label="Close">&times;</button></header>
+  <div class="body" id="drawerBody"></div>
+  <footer>
+    <button class="btn quiet" id="drawerCancel" type="button">Cancel</button>
+    <button class="btn" id="drawerSave" type="button">Save</button>
+  </footer>
+</section>
+
+<script src="/assets/js/admin.js"></script>
+</body>
+</html>

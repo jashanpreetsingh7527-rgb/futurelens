@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Activity log &middot; FUTURELENS admin</title>
+<link rel="icon" href="/assets/img/favicon.png">
+<link rel="stylesheet" href="/assets/css/admin.css">
+</head>
+<body data-page="audit">
+
+<div class="mobile-bar">
+  <button id="sideToggle" aria-label="Open menu">Menu</button>
+  <b>FUTURELENS</b>
+</div>
+
+<div class="shell">
+  <aside class="side" id="side"></aside>
+  <main class="work">
+    <div class="page-head">
+      <div>
+        <h1 id="pageTitle">Activity log</h1>
+        <p id="pageSub">Every change made in this admin area. The log is append-only and cannot be edited or deleted.</p>
+      </div>
+      
+    </div>
+    <div id="pageNotice"></div>
+    <div class="panel" id="auditTable"></div>
+  </main>
+</div>
+
+<div class="scrim" id="scrim"></div>
+<section class="drawer" id="drawer" aria-hidden="true">
+  <header><h2 id="drawerTitle">Edit</h2><button class="close" id="drawerClose" aria-label="Close">&times;</button></header>
+  <div class="body" id="drawerBody"></div>
+  <footer>
+    <button class="btn quiet" id="drawerCancel" type="button">Cancel</button>
+    <button class="btn" id="drawerSave" type="button">Save</button>
+  </footer>
+</section>
+
+<script src="/assets/js/admin.js"></script>
+</body>
+</html>

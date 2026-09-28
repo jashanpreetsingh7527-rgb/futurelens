@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FUTURELENS — See the future, shape the future</title>
+<meta name="description" content="FUTURELENS is the student club for photography, media and storytelling. Weekly shoots, workshops and competitions, open to everyone.">
+<meta name="theme-color" content="#142850">
+<link rel="icon" href="/assets/img/favicon.png">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="/assets/css/site.css">
+</head>
+<body>
+
+<header class="masthead" id="masthead">
+  <div class="wrap">
+    <a class="lockup" href="#top">
+      <img src="/assets/img/logo.png" alt="FUTURELENS crest">
+      <span class="words">
+        <b id="brand">FUTURELENS</b>
+        <span class="slogan">SEE THE FUTURE! SHAPE THE FUTURE!</span>
+      </span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="nav" aria-label="Open menu"><span></span></button>
+    <nav id="nav">
+      <a href="#events">Events</a>
+      <a href="#winners">Winners</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#stars">Star Members</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#team">Committee</a>
+      <a href="#join" class="btn small cta">Join the club</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <img class="hero-crest reveal" src="/assets/img/logo-hero.png"
+             alt="FUTURELENS crest" width="408" height="292">
+        <span class="eyebrow reveal d1">Student photography &amp; media club</span>
+        <h1 class="reveal d1" id="heroTitle">FUTURELENS</h1>
+        <p class="hero-slogan reveal d2">SEE THE FUTURE! SHAPE THE FUTURE!</p>
+        <p class="lede reveal d2" id="heroLede">Every week we hand out cameras, walk somewhere worth photographing, and come back with something to argue about.</p>
+        <div class="hero-actions reveal d3">
+          <a class="btn" href="#join">Become a member</a>
+          <a class="btn ghost" href="#gallery">See the work</a>
+        </div>
+      </div>
+      <figure class="star-frame reveal d4" id="weekStar"></figure>
+    </div>
+  </section>
+
+  <div class="filmstrip"></div>
+
+  <div class="stat-band" id="statBand" hidden><div class="wrap" id="stats"></div></div>
+
+  <section class="band" id="events">
+    <div class="wrap">
+      <div class="band-head">
+        <span class="eyebrow">What's on</span>
+        <h2>Events</h2>
+        <p>Workshops, shoots and competitions run by the club through the term. Everything is open to members, and most of it is open to everyone.</p>
+      </div>
+      <div id="eventsList"></div>
+    </div>
+  </section>
+
+  <section class="band alt" id="winners">
+    <div class="wrap">
+      <div class="band-head">
+        <span class="eyebrow">The honours board</span>
+        <h2>Winners</h2>
+        <p>Every competition result the club has recorded, most recent first.</p>
+      </div>
+      <div id="winnersList"></div>
+    </div>
+  </section>
+
+  <section class="band" id="achievements">
+    <div class="wrap">
+      <div class="band-head">
+        <span class="eyebrow">Beyond the club</span>
+        <h2>Achievements</h2>
+        <p>Recognition our members have earned outside FUTURELENS.</p>
+      </div>
+      <div id="achievementsList"></div>
+    </div>
+  </section>
+
+  <section class="band dark" id="stars">
+    <div class="wrap">
+      <div class="band-head">
+        <span class="eyebrow">Recognised this year</span>
+        <h2>Star Members</h2>
+        <p>Members whose contribution to the club has stood out — the people who carry the tripods and stay behind to lock up.</p>
+      </div>
+      <div id="starList"></div>
+    </div>
+  </section>
+
+  <section class="band alt" id="gallery">
+    <div class="wrap">
+      <div class="band-head">
+        <span class="eyebrow">Contact sheet</span>
+        <h2>Gallery</h2>
+        <p>Work from club shoots, events and submissions. Tap any frame to see it full size.</p>
+      </div>
+      <div id="galleryChips" class="chips" hidden></div>
+      <div id="galleryList"></div>
+    </div>
+  </section>
+
+  <section class="band" id="team">
+    <div class="wrap">
+      <div class="band-head">
+        <span class="eyebrow">Who runs it</span>
+        <h2>The committee</h2>
+        <p>Who to speak to about what.</p>
+      </div>
+      <div id="teamList"></div>
+    </div>
+  </section>
+
+  <section class="join" id="join">
+    <img class="watermark" src="/assets/img/logo-light.png" alt="" aria-hidden="true">
+    <div class="wrap">
+      <div>
+        <span class="eyebrow">Membership</span>
+        <h2>Join FUTURELENS</h2>
+        <p id="aboutText">Membership is open to every student, whatever you shoot with — phone, film or full frame. Register here and the committee will confirm your place.</p>
+        <ul class="perks">
+          <li>Borrow club cameras, lenses and lighting</li>
+          <li>Weekly shoots and monthly critique sessions</li>
+          <li>Enter club competitions and get your work shown</li>
+          <li>Learn from members who have done it before</li>
+        </ul>
+        <p style="margin-top:1.6rem">Already a member? <a href="#join" id="toSignIn" style="color:var(--gold-light)">Sign in instead</a>.</p>
+      </div>
+
+      <form class="card" id="registerForm" autocomplete="on">
+        <h3>Member registration</h3>
+        <div id="registerNotice"></div>
+        <div class="field">
+          <label for="r_name">Full name</label>
+          <input id="r_name" name="full_name" required autocomplete="name">
+        </div>
+        <div class="field">
+          <label for="r_email">Email address</label>
+          <input id="r_email" name="email" type="email" required autocomplete="email">
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="r_course">Course</label>
+            <input id="r_course" name="course" autocomplete="off">
+          </div>
+          <div class="field">
+            <label for="r_year">Year</label>
+            <input id="r_year" name="year_of_study" autocomplete="off">
+          </div>
+        </div>
+        <div class="field">
+          <label for="r_phone">Phone (optional)</label>
+          <input id="r_phone" name="phone" autocomplete="tel">
+        </div>
+        <div class="field">
+          <label for="r_password">Choose a password</label>
+          <input id="r_password" name="password" type="password" required autocomplete="new-password">
+          <p class="hint">At least 10 characters, with an uppercase letter, a lowercase letter and a number.</p>
+        </div>
+        <button class="btn" type="submit" id="registerBtn" style="width:100%">Create my account</button>
+      </form>
+
+      <form class="card" id="signinForm" hidden autocomplete="on">
+        <h3>Member sign in</h3>
+        <div id="signinNotice"></div>
+        <div class="field">
+          <label for="s_email">Email address</label>
+          <input id="s_email" name="email" type="email" required autocomplete="email">
+        </div>
+        <div class="field">
+          <label for="s_password">Password</label>
+          <input id="s_password" name="password" type="password" required autocomplete="current-password">
+        </div>
+        <button class="btn" type="submit" style="width:100%">Sign in</button>
+        <p class="hint" style="margin-top:.9rem">New here? <a href="#join" id="toRegister">Create an account</a>.</p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap foot-main">
+    <div class="foot-brand">
+      <div class="lockup">
+        <img src="/assets/img/logo-light.png" alt="">
+        <span class="words">
+          <b>FUTURELENS</b>
+          <span class="slogan">SEE THE FUTURE! SHAPE THE FUTURE!</span>
+        </span>
+      </div>
+      <p id="footAbout"></p>
+      <div class="foot-social" id="footLinks"></div>
+    </div>
+
+    <nav class="foot-col" aria-label="Sections">
+      <h4>Explore</h4>
+      <a href="#top">Home</a>
+      <a href="#events">Events</a>
+      <a href="#winners">Winners</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#gallery">Gallery</a>
+    </nav>
+
+    <nav class="foot-col" aria-label="The club">
+      <h4>The club</h4>
+      <a href="#stars">Star Members</a>
+      <a href="#team">Committee</a>
+      <a href="#join">Become a member</a>
+      <a href="#join" id="footSignIn">Member sign in</a>
+      <a href="/admin/login.html">Committee sign in</a>
+    </nav>
+
+    <div class="foot-col">
+      <h4>Contact</h4>
+      <address id="footContact"></address>
+      <nav id="footPages" aria-label="Information"></nav>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="base">
+      <span id="footCopy"></span>
+      <span class="foot-legal" id="footLegal"></span>
+    </div>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photograph">
+  <button class="close" id="lbClose" aria-label="Close">&times;</button>
+  <button class="prev" id="lbPrev" aria-label="Previous">&#8249;</button>
+  <button class="next" id="lbNext" aria-label="Next">&#8250;</button>
+  <div>
+    <img id="lbImg" src="" alt="">
+    <div class="cap" id="lbCap"></div>
+  </div>
+</div>
+
+<script src="/assets/js/site.js"></script>
+</body>
+</html>

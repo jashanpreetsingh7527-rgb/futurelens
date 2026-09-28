@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Committee sign in &middot; FUTURELENS</title>
+<link rel="icon" href="/assets/img/favicon.png">
+<link rel="stylesheet" href="/assets/css/admin.css">
+</head>
+<body class="auth-page" data-page="login">
+  <div class="auth-card">
+    <div class="crest">
+      <img src="/assets/img/logo.png" alt="">
+      <span class="words"><b>FUTURELENS</b><span class="slogan">SEE THE FUTURE! SHAPE THE FUTURE!</span></span>
+    </div>
+    <h1>Committee sign in</h1>
+    <p class="sub">This area is for club administrators. Members sign in on the main website.</p>
+    <div id="loginNotice"></div>
+    <form id="loginForm">
+      <div class="field">
+        <label for="email">Email address</label>
+        <input id="email" type="email" required autocomplete="username">
+      </div>
+      <div class="field">
+        <label for="password">Password</label>
+        <input id="password" type="password" required autocomplete="current-password">
+      </div>
+      <button class="btn" type="submit" id="loginBtn" style="width:100%">Sign in</button>
+    </form>
+    <p class="hint" style="margin-top:1.2rem">Lost your access? Ask a Super Admin to reset it for you.</p>
+  </div>
+  <script src="/assets/js/admin.js"></script>
+</body>
+</html>

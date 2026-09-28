@@ -1,0 +1,15 @@
+{
+  "name": "futurelens",
+  "version": "1.0.0",
+  "private": true,
+  "description": "FUTURELENS club website with a role- and permission-based admin area.",
+  "main": "server.js",
+  "engines": { "node": ">=22.5.0" },
+  "scripts": {
+    "setup": "node setup.js",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.49.1"
+  }
+}
