@@ -233,7 +233,7 @@ document.addEventListener('keydown', (e) => {
 
 /* -------------------------------- footer --------------------------- */
 
-const SOCIAL_LABEL = { instagram: 'IG', linkedin: 'IN', youtube: 'YT', email: 'M', whatsapp: 'WA' };
+const SOCIAL_LABEL = { instagram: 'WA', linkedin: 'IN', youtube: 'GM' };
 
 function renderFooter(settings, pages) {
   const name = (settings.site_title || 'FUTURELENS').toUpperCase();
@@ -246,7 +246,7 @@ function renderFooter(settings, pages) {
     settings.contact_phone && `<a href="tel:${esc(settings.contact_phone.replace(/\s/g, ''))}">${esc(settings.contact_phone)}</a>`,
   ].filter(Boolean).join('') || '<span>Contact details coming soon.</span>';
 
-  $('footLinks').innerHTML = ['instagram', 'linkedin', 'youtube', 'email','whatsapp']
+  $('footLinks').innerHTML = ['instagram', 'linkedin', 'youtube']
     .filter((k) => settings[k])
     .map((k) => `<a href="${esc(settings[k])}" aria-label="${k}" rel="noopener">${SOCIAL_LABEL[k]}</a>`)
     .join('');
