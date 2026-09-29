@@ -7,8 +7,8 @@
   --ink-deep:   #091528;
   --steel:      #466496;
   --steel-pale: #B7C6DF;
-  --gold:       #9A7C46;
-  --gold-light: #C6A96E;
+  --gold:       #c98d12;
+  --gold-light: #f1f1f0;
   --gold-glow:  #E3CE9C;
   --paper:      #F5F5F3;
   --paper-warm: #FCFCFB;
@@ -43,7 +43,7 @@ body {
 img { max-width: 100%; display: block; }
 a { color: var(--ink); text-decoration-color: var(--gold-light); text-underline-offset: 3px; }
 a:hover { color: var(--steel); }
-:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; border-radius: 2px; }
+:focus-visible { outline: 2px solid var(--gold) !important; outline-offset: 3px; border-radius: 2px; }
 
 h1, h2, h3 {
   font-family: var(--display);
@@ -58,7 +58,7 @@ h1, h2, h3 {
 /* A thin strip of gold marks — a nod to sprocket holes on film. */
 .filmstrip {
   height: 7px;
-  background-image: linear-gradient(90deg, var(--gold) 0 10px, transparent 10px 22px);
+  background-image: linear-gradient(90deg, var(--gold) !important 0 10px, transparent 10px 22px);
   background-size: 22px 7px;
   opacity: .5;
 }
@@ -86,7 +86,7 @@ h1, h2, h3 {
 .lockup .slogan {
   margin-top: .34rem;
   font-size: .565rem; font-weight: 600; letter-spacing: .188em;
-  color: var(--gold); white-space: nowrap;
+  color: var(--gold) !important; white-space: nowrap;
 }
 
 .masthead nav { margin-left: auto; display: flex; gap: 1.45rem; align-items: center; }
@@ -96,7 +96,7 @@ h1, h2, h3 {
 }
 .masthead nav a::after {
   content: ''; position: absolute; left: 0; right: 100%; bottom: .15rem;
-  height: 1.5px; background: var(--gold); transition: right .22s ease;
+  height: 1.5px; background: var(--gold) !important; transition: right .22s ease;
 }
 .masthead nav a:hover { color: var(--ink); }
 .masthead nav a:hover::after { right: 0; }
@@ -152,7 +152,7 @@ h1, h2, h3 {
   font-size: .72rem; font-weight: 600; letter-spacing: .2em; color: var(--gold-light);
   margin-bottom: 1.3rem;
 }
-.eyebrow::before { content: ''; width: 34px; height: 1px; background: var(--gold); }
+.eyebrow::before { content: ''; width: 34px; height: 1px; background: var(--gold) !important; }
 
 .hero h1 {
   font-size: clamp(3rem, 8.4vw, 5.6rem);
@@ -191,7 +191,7 @@ h1, h2, h3 {
 .star-frame figcaption { padding: 1rem .25rem 1.15rem; border-top: 1px solid var(--rule); margin-top: 15px; color: var(--text); }
 .star-frame .ribbon {
   position: absolute; top: -13px; left: 15px; z-index: 3;
-  background: var(--gold); color: #fff;
+  background: var(--gold) !important; color: #fff;
   font-size: .64rem; font-weight: 700; letter-spacing: .19em;
   padding: .42rem .95rem; box-shadow: 0 6px 14px -6px rgba(0,0,0,.6);
 }
@@ -212,8 +212,8 @@ h1, h2, h3 {
 
 .btn {
   font: inherit; font-size: .92rem; font-weight: 600; letter-spacing: .02em;
-  padding: .78rem 1.6rem; border-radius: 3px; cursor: pointer; border: 1px solid var(--gold);
-  background: var(--gold); color: #fff; text-decoration: none; display: inline-block;
+  padding: .78rem 1.6rem; border-radius: 3px; cursor: pointer; border: 1px solid var(--gold) !important;
+  background: var(--gold) !important; color: #fff; text-decoration: none; display: inline-block;
   transition: transform .16s, box-shadow .16s, background .16s, border-color .16s;
   box-shadow: 0 8px 20px -12px rgba(154,124,70,.9);
 }
@@ -246,7 +246,7 @@ section.band.alt { background: var(--paper); }
 section.band.dark { background: var(--ink); color: #fff; }
 
 .band-head { margin-bottom: 2.6rem; max-width: 62ch; }
-.band-head .eyebrow { color: var(--gold); margin-bottom: .9rem; }
+.band-head .eyebrow { color: var(--gold) !important; margin-bottom: .9rem; }
 .dark .band-head .eyebrow { color: var(--gold-light); }
 .band-head h2 { font-size: clamp(1.9rem, 4.2vw, 2.9rem); margin-bottom: .55rem; }
 .dark .band-head h2 { color: #fff; }
@@ -282,7 +282,7 @@ section.band.dark { background: var(--ink); color: #fff; }
   font-size: .68rem; font-weight: 700; letter-spacing: .14em; padding: .3rem .7rem;
   border-radius: 999px; border: 1px solid var(--rule); color: var(--muted); white-space: nowrap;
 }
-.event .tag.upcoming { border-color: var(--gold-light); color: var(--gold); background: #FBF7EF; }
+.event .tag.upcoming { border-color: var(--gold-light); color: var(--gold) !important; background: #FBF7EF; }
 
 /* ------------------------------- winners --------------------------- */
 
@@ -306,7 +306,7 @@ section.band.dark { background: var(--ink); color: #fff; }
   background: #EDF0F5; display: grid; place-items: center;
   color: var(--steel); font-family: var(--display); font-size: 1.5rem;
 }
-.medal .place { font-size: .68rem; font-weight: 700; letter-spacing: .16em; color: var(--gold); }
+.medal .place { font-size: .68rem; font-weight: 700; letter-spacing: .16em; color: var(--gold) !important; }
 .medal h3 { font-size: 1.25rem; margin: .3rem 0 .2rem; }
 .medal .what { font-size: .85rem; color: var(--muted); }
 .medal .when { font-size: .78rem; color: var(--muted); margin-top: .45rem; }
@@ -325,7 +325,7 @@ section.band.dark { background: var(--ink); color: #fff; }
 }
 .ledger .who { font-family: var(--display); font-size: 1.1rem; font-weight: 500; }
 .ledger .what { font-size: .85rem; color: var(--muted); }
-.ledger .position { font-size: .76rem; font-weight: 600; letter-spacing: .08em; color: var(--gold); }
+.ledger .position { font-size: .76rem; font-weight: 600; letter-spacing: .08em; color: var(--gold) !important; }
 .ledger .when { font-size: .8rem; color: var(--muted); white-space: nowrap; }
 
 /* ----------------------------- achievements ------------------------ */
@@ -336,10 +336,10 @@ section.band.dark { background: var(--ink); color: #fff; }
 .timeline li::before {
   content: ''; position: absolute; left: -1.9rem; top: .55rem;
   width: 11px; height: 11px; border-radius: 50%;
-  background: var(--paper); border: 2px solid var(--gold);
+  background: var(--paper); border: 2px solid var(--gold) !important;
 }
 .timeline h3 { font-size: 1.16rem; font-weight: 500; margin-bottom: .15rem; }
-.timeline .meta { font-size: .8rem; color: var(--gold); font-weight: 600; letter-spacing: .06em; }
+.timeline .meta { font-size: .8rem; color: var(--gold) !important; font-weight: 600; letter-spacing: .06em; }
 .timeline p { margin: .35rem 0 0; font-size: .92rem; color: var(--muted); max-width: 62ch; }
 
 /* ------------------------- portraits / people ---------------------- */
@@ -354,12 +354,12 @@ section.band.dark { background: var(--ink); color: #fff; }
 .person:hover .shot img { transform: scale(1.05); }
 .person .badge {
   position: absolute; top: .6rem; left: .6rem; z-index: 2;
-  background: var(--gold); color: #fff; font-size: .64rem; font-weight: 700;
+  background: var(--gold) !important; color: #fff; font-size: .64rem; font-weight: 700;
   letter-spacing: .14em; padding: .28rem .6rem; border-radius: 2px;
 }
 .person figcaption { padding-top: .75rem; }
 .person figcaption b { font-family: var(--display); font-weight: 500; font-size: 1.1rem; display: block; }
-.person figcaption span { font-size: .81rem; color: var(--gold); font-weight: 600; }
+.person figcaption span { font-size: .81rem; color: var(--gold) !important; font-weight: 600; }
 .person figcaption p { font-size: .86rem; color: var(--muted); margin: .4rem 0 0; }
 .dark .person figcaption b { color: #fff; }
 .dark .person figcaption p { color: var(--steel-pale); }
@@ -425,7 +425,7 @@ section.band.dark { background: var(--ink); color: #fff; }
 
 form.card {
   background: var(--paper-warm); padding: 1.7rem; border-radius: 5px;
-  color: var(--text); box-shadow: var(--shadow-lg); border-top: 3px solid var(--gold);
+  color: var(--text); box-shadow: var(--shadow-lg); border-top: 3px solid var(--gold) !important;
 }
 form.card h3 { font-size: 1.35rem; margin-bottom: 1.1rem; }
 
@@ -467,7 +467,7 @@ footer.site {
   color: #99A1AE;
   padding-block: 3.4rem 1.6rem;
   font-size: .89rem;
-  border-top: 3px solid var(--gold);
+  border-top: 3px solid var(--gold) !important;
 }
 footer.site .foot-main {
   display: grid; grid-template-columns: 1.7fr 1fr 1fr 1.2fr;
@@ -484,7 +484,7 @@ footer.site h4 {
   border-bottom: 1px solid rgba(255,255,255,.12); position: relative;
 }
 footer.site h4::after {
-  content: ''; position: absolute; left: 0; bottom: -1px; width: 34px; height: 1px; background: var(--gold);
+  content: ''; position: absolute; left: 0; bottom: -1px; width: 34px; height: 1px; background: var(--gold) !important;
 }
 footer.site .foot-col a {
   color: #B9C0CC; text-decoration: none; display: block; padding-block: .3rem;
@@ -506,7 +506,7 @@ footer.site #footPages a:hover { color: var(--gold-light); }
   font-size: .68rem; font-weight: 700; letter-spacing: .04em;
   transition: background .16s, border-color .16s, color .16s;
 }
-.foot-social a:hover { background: var(--gold); border-color: var(--gold); color: #fff; }
+.foot-social a:hover { background: var(--gold) !important; border-color: var(--gold) !important; color: #fff; }
 
 footer.site .base {
   padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,.1);
