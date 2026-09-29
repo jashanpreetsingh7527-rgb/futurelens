@@ -34,7 +34,7 @@ function renderFooter(settings, pages) {
     settings.contact_phone && `<a href="tel:${esc(settings.contact_phone.replace(/\s/g, ''))}">${esc(settings.contact_phone)}</a>`,
   ].filter(Boolean).join('') || '<span>Contact details coming soon.</span>';
 
-  $('footLinks').innerHTML = ['instagram', 'linkedin', 'youtube']
+  $('footLinks').innerHTML = ['instagram', 'linkedin', 'youtube', 'gmail']
     .filter((k) => settings[k])
     .map((k) => `<a href="${esc(settings[k])}" aria-label="${k}" rel="noopener">${SOCIAL_LABEL[k]}</a>`).join('');
 

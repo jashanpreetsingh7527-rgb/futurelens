@@ -233,12 +233,12 @@ document.addEventListener('keydown', (e) => {
 
 /* -------------------------------- footer --------------------------- */
 
-const SOCIAL_LABEL = { instagram: 'IG', linkedin: 'IN', youtube: 'YT' };
+const SOCIAL_LABEL = { instagram: 'IG', linkedin: 'IN', youtube: 'YT', email: 'M', whatsapp: 'WA' };
 
 function renderFooter(settings, pages) {
   const name = (settings.site_title || 'FUTURELENS').toUpperCase();
 
-  $('footAbout').textContent = 'A student club for photography, media and storytelling. Open to every student, whatever you shoot with.';
+  $('footAbout').textContent = 'Empowering students to explore their potential, exchange ideas, embrace technology and innovation, develop meaningful skills, and transform creativity into opportunities that shape a brighter future.';
 
   $('footContact').innerHTML = [
     settings.address && `<span>${esc(settings.address)}</span>`,
@@ -246,7 +246,7 @@ function renderFooter(settings, pages) {
     settings.contact_phone && `<a href="tel:${esc(settings.contact_phone.replace(/\s/g, ''))}">${esc(settings.contact_phone)}</a>`,
   ].filter(Boolean).join('') || '<span>Contact details coming soon.</span>';
 
-  $('footLinks').innerHTML = ['instagram', 'linkedin', 'youtube']
+  $('footLinks').innerHTML = ['instagram', 'linkedin', 'youtube', 'email','whatsapp']
     .filter((k) => settings[k])
     .map((k) => `<a href="${esc(settings[k])}" aria-label="${k}" rel="noopener">${SOCIAL_LABEL[k]}</a>`)
     .join('');

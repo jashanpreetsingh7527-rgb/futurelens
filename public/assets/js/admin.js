@@ -138,7 +138,7 @@ async function buildShell(activeHref) {
 
   $('side').innerHTML = `
     <div class="crest">
-      <img src="/assets/img/logo-light.png" alt="">
+      <img src="/assets/img/light-icon.png" alt="">
       <span class="words"><b>FUTURELENS</b><span class="slogan">SEE THE FUTURE! SHAPE THE FUTURE!</span></span>
     </div>
     <nav>${links.join('')}</nav>
